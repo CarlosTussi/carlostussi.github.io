@@ -58,20 +58,28 @@ h1{
 
 h2,h3{
     text-align: center;
-
+    margin-bottom: 20px;
 }
 
 nav{
     height: 90%;
 }
 
-hr {
-    width: 96%;               
-    background-color:#000000;
+.hr-primary {
+    width: 60%;               
+    background-color: var(--primary-text-color);
     height: 1px;
     align-items: center;
-    margin: 0 0px 15px 0;
+    margin: auto;
   }
+
+.hr-secondary{
+    width: 60%;               
+    background-color: var(--secondary-text-color);
+    height: 1px;
+    align-items: center;
+    margin: auto;
+}
 
 /*******************/
 /* THEME SECTIONS */
@@ -195,14 +203,23 @@ hr {
     position: fixed;
 }
 
-.contact, a{
+.contact{
     text-align: center;
 }
+
+.contact a{
+    color: var(--primary-text-color);
+}
+
+
+
 .contact-icons{
     display: flex;
     justify-content: center;
     gap: 20px;
+    margin: 30px 0 20px 0;
 }
+
 
 
 .photo-title{
@@ -216,6 +233,10 @@ footer{
 }
 small{
     font-size: xx-small;
+}
+
+.footer-copyright{
+    padding-bottom: 15px;
 }
 
 
