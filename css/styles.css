@@ -1,0 +1,250 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+:root{
+    /* Defining global colors to make it easier to change later */
+
+    /* COLORS */
+    --primary-background-color: #141312; 
+    --primary-text-color: #ffffff;
+
+    --secondary-background-color: var(--primary-text-color);
+    --secondary-text-color: var(--primary-background-color)
+
+ 
+}
+
+
+/* **** */
+/* HTML */
+/* **** */
+html{
+    scroll-behavior: smooth;
+}
+
+/* primary secondary text accent */
+
+/* **** */
+/* BODY */
+/* **** */
+body{
+    display: flex;
+    height: 100vh;
+    flex-direction:column;
+
+    /* heigh: 100vh indicates that the <body> will occupy the whole viewport.
+    Meaning that later, it will be possible to use flex: 1 for example to occupy the remainig free space. */
+}
+
+ul, ol{
+    list-style-type: none;
+}
+
+img{
+    max-width: 50%;
+    border-radius: 50%;
+}
+
+h1{
+    font-size: 1.5em;
+}
+
+h2,h3{
+    text-align: center;
+
+}
+
+nav{
+    height: 90%;
+}
+
+hr {
+    width: 96%;               
+    background-color:#000000;
+    height: 1px;
+    align-items: center;
+    margin: 0 0px 15px 0;
+  }
+
+/*******************/
+/* THEME SECTIONS */
+/*******************/
+
+
+.primary-theme{
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color);
+    padding: 0 50px;
+    padding: 30px 50px 0px 50px;
+}
+
+.secondary-theme{
+    background-color: var(--secondary-background-color);
+    color: var(--secondary-text-color);
+    padding: 30px 50px 0px 50px;
+}
+
+
+/*******************/
+/*******************/
+/*******************/
+
+
+.intro{
+    text-align: center;
+}
+
+.certification-item{
+    padding: 15px 0;
+}
+
+.certification-item :first-child{
+    font-weight: 800;    
+}
+
+.certification-item :last-child{
+    font-style: italic;
+}
+
+.education-item{
+    padding: 15px 0;
+}
+
+.education-item :first-child{
+    font-weight: 800;    
+}
+
+.education-item :last-child{
+    font-style: italic;
+}
+
+.experience-item{
+    padding: 15px 0;
+}
+
+.experience-item :first-child{
+    font-weight: 800;
+}
+
+.experience-item :last-child{
+    font-style: italic;
+}
+
+.projects h3{
+    text-align: left;
+}
+
+.projects li{
+    padding: 15px 0px;
+}
+
+.x-button{
+    position: absolute;
+    top: 0px;
+    font-size:xx-large;
+}
+
+.end-section-padding{
+    padding-bottom: 50px;
+}
+
+
+.main-menu{
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #c4c3c3ee; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.main-menu ul{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    height: 100%;
+}
+.main-menu li{
+    font-size: larger;
+    text-align: center;
+}
+.main-menu a{
+    color: #000000;
+    text-decoration:none;
+    font-weight: 500;
+
+}
+
+.skill-title{
+    font-weight: 800;
+    padding: 15px 0px 0px 0px;
+}
+
+.bar-icon{
+    position: fixed;
+}
+
+.contact, a{
+    text-align: center;
+}
+.contact-icons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.photo-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+footer{
+    text-align: center;
+}
+small{
+    font-size: xx-small;
+}
+
+
+@media only screen and (min-width: 600px) {
+    .main-menu{
+        width: 100%;
+        position: static;
+        height:fit-content;
+        padding: 0;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+
+    nav ul li{
+        padding: 10px;
+        text-align: center;
+
+    }
+
+    img{
+        max-width: 15%;
+    }
+
+    .bar-icon, .x-button{
+        display: none;
+    }
+  }
