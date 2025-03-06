@@ -16,9 +16,9 @@
     --primary-text-color: #ffffff;
 
     --secondary-background-color: var(--primary-text-color);
-    --secondary-text-color: var(--primary-background-color)
+    --secondary-text-color: var(--primary-background-color);
 
- 
+    --primary-hover-color: #ffffff5f; 
 }
 
 
@@ -162,8 +162,11 @@ nav{
     padding-bottom: 50px;
 }
 
+.desktop-menu{
+    display: none;
+}
 
-.main-menu{
+.mobile-menu{
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
@@ -176,17 +179,17 @@ nav{
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
-.main-menu ul{
+.mobile-menu ul{
     display: flex;
     flex-direction: column;
     justify-content:space-evenly;
     height: 100%;
 }
-.main-menu li{
+.mobile-menu li{
     font-size: larger;
     text-align: center;
 }
-.main-menu a{
+.mobile-menu a{
     color: #000000;
     text-decoration:none;
     font-weight: 500;
@@ -230,6 +233,7 @@ nav{
 footer{
     text-align: center;
 }
+
 small{
     font-size: xx-small;
 }
@@ -240,24 +244,35 @@ small{
 
 
 @media only screen and (min-width: 600px) {
-    .main-menu{
-        width: 100%;
-        position: static;
-        height:fit-content;
-        padding: 0;
+    .mobile-menu{
+        display: none;
     }
 
-    nav ul {
+    .desktop-menu{
+        display: block;
+        width: 100%;
+    }
+
+    .desktop-menu ul {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
+        padding: 0px 0 30px 0;
         
     }
 
-    nav ul li{
+    .desktop-menu ul li{
         padding: 10px;
         text-align: center;
+        font-size: large;
+    }
+    .desktop-menu a:hover{
+        color: var(--primary-hover-color)
+    }
 
+    .desktop-menu a{
+        text-decoration: none;
+        color: var(--primary-text-color);
     }
 
     img{
