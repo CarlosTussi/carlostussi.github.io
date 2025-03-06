@@ -31,7 +31,7 @@
 <body>
     <header id="home">  
         <div class = "mobile-menu" id = "mobile-menu-js">
-            <!-- Navigation Bar -->
+            <!-- Mobile Navigation Bar -->
             <nav>
                 <a href="javascript:void(0)" class="x-button" onclick="closeNav()">&times;</a>
                 <ul>
@@ -44,11 +44,10 @@
             </nav>
         </div>
         <div class = "bar-icon" id = "bar-icon" onclick="openNav()">
-            <i class="fa fa-bars" style="font-size:20px; color: grey;"></i>
+            <i class="fa fa-bars" style="font-size:20px; color: var(--hamburger-menu-color);"></i>
         </div>
-        <!-- Website name or logo -->     
-         <div class="photo-title primary-theme end-section-padding">
-            <nav class = "desktop-menu">
+        <!-- Desktop Navigation Bar -->    
+            <nav class = "desktop-menu primary-theme">
                 <ul>
                     <li><a href="index.html#home">Home</a></li>
                     <li><a href="index.html#about">About</a></li>
@@ -57,19 +56,26 @@
                     <li><a href="index.html#contact">Contact</a></li>
                 </ul>
             </nav>
-            <img src="/assets/photo.JPG" alt="main personal photo">
-            <h1>Carlos Eduardo Tussi</h1>
-            <h1>Data Scientist</h1>
-        </div>
+
 	</header>
     <!-- Main Content -->
     <main>
+        <section class="home primary-theme photo-title">
+            <img src="/assets/photo.JPG" alt="main personal photo">
+            <div class="name-title">
+                <h1>Carlos Eduardo Tussi</h1>
+                <h1>Data Scientist</h1>
+            </div>
+
+        </section>
+        <div class="transition-to-secondary"></div>
         <section class="about secondary-theme end-section-padding" id="about"> 
 			<h2>About <hr class = "hr-secondary"></h2>
 			<article>
 			<p class="intro">Computer Science graduate, with a passion for data and experience working in international environments. Currently expanding my expertise, pursuing an MSc in Data Science and AI. <br> <strong>[This page is under construction]</strong></p> 
 		</article>
         </section>
+        <div class="transition-to-primary"></div>
 		<section class="projects primary-theme end-section-padding" id = "projects">
             <h2>Projects <hr class="hr-primary"> </h2>
             <ul>       
@@ -90,6 +96,7 @@
             </li>
         </ul>
         </section>
+        <div class="transition-to-secondary"></div>
         <section class = "resume secondary-theme end-section-padding" id="resume">
             <h2>Resume <hr class="hr-secondary"></h2>
             <article>
@@ -208,6 +215,7 @@
                 </ul>
             </article>
         </section>
+        <div class="transition-to-primary"></div>
 		<section class="contact primary-theme" id = "contact">         
             <article>
 				<h2>Contact <hr class="hr-primary"></h2>

@@ -9,16 +9,18 @@
 
 
 :root{
-    /* Defining global colors to make it easier to change later */
+    /* Global colors */
 
     /* COLORS */
-    --primary-background-color: #141312; 
-    --primary-text-color: #ffffff;
+    --primary-background-color: #0d1b2a; 
+    --primary-text-color: #538ecc;
 
     --secondary-background-color: var(--primary-text-color);
     --secondary-text-color: var(--primary-background-color);
 
-    --primary-hover-color: #ffffff5f; 
+    --primary-hover-color: #9ac9fc; 
+
+    --hamburger-menu-color: #adb09d; 
 }
 
 
@@ -38,9 +40,15 @@ body{
     display: flex;
     height: 100vh;
     flex-direction:column;
+    background-color: var(--primary-background-color);
 
     /* heigh: 100vh indicates that the <body> will occupy the whole viewport.
     Meaning that later, it will be possible to use flex: 1 for example to occupy the remainig free space. */
+}
+
+
+header{
+    background-color: var(--primary-background-color);
 }
 
 ul, ol{
@@ -65,7 +73,12 @@ nav{
     height: 90%;
 }
 
-.hr-primary {
+.name-title{
+    padding-top: 40px;
+    text-align: center;
+}
+
+.hr-pridmary {
     width: 60%;               
     background-color: var(--primary-text-color);
     height: 1px;
@@ -73,7 +86,7 @@ nav{
     margin: auto;
   }
 
-.hr-secondary{
+.hr-secdondary{
     width: 60%;               
     background-color: var(--secondary-text-color);
     height: 1px;
@@ -203,6 +216,7 @@ nav{
 
 .bar-icon{
     position: fixed;
+    padding: 10px 0 15px 15px;
 }
 
 .contact{
@@ -228,7 +242,8 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
+    color: var(--primary-text-color);
+    padding-bottom: 50px;
 }
 footer{
     text-align: center;
@@ -244,20 +259,37 @@ small{
 
 
 @media only screen and (min-width: 600px) {
+
+
+    /*!!!!!!!*/
+    html{
+        text-align: center;
+    }
+    main{
+        margin: 0 15vw;
+    }
+    .projects h3{
+        text-align: center;
+    }
+    /*!!!!!!!*/
+
     .mobile-menu{
         display: none;
     }
 
     .desktop-menu{
         display: block;
-        width: 100%;
+        position: fixed;
+        height: 100vh;
+        padding-top : 0;
     }
 
     .desktop-menu ul {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 0px 0 30px 0;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100vh;
+        /*padding: 0px 80px 30px 80px;*/
         
     }
 
@@ -265,21 +297,37 @@ small{
         padding: 10px;
         text-align: center;
         font-size: large;
+        
     }
     .desktop-menu a:hover{
-        color: var(--primary-hover-color)
+        color: var(--primary-hover-color);
     }
 
     .desktop-menu a{
         text-decoration: none;
         color: var(--primary-text-color);
+        
+    }
+
+    .transition-to-secondary{
+        height: 2px;
+        background-image: linear-gradient(var(--primary-background-color), var(--secondary-background-color));
+    }
+
+    .transition-to-primary{
+        height: 2px;
+        background-image: linear-gradient(var(--secondary-background-color), var(--primary-background-color));
     }
 
     img{
-        max-width: 15%;
+        max-width: 12vw;
     }
 
     .bar-icon, .x-button{
         display: none;
+    }
+
+    .end-section-padding{
+        padding: 50px 200px 50px 200px;
     }
   }
