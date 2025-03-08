@@ -229,8 +229,15 @@ nav{
     color: var(--primary-text-color);
     background-color: var(--contrast-color);
     padding: 30px;
-    height: 20vh;
     border-radius: 10px 10px 0 0;
+}
+
+.project-title-container h3{
+    font-weight: 350;
+}
+
+.project-card p,li{
+    font-weight: 200;
 }
 
 .project-card p{
@@ -268,16 +275,17 @@ nav{
 
 
 .mobile-menu{
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
+    height: 100%;
+    width: 0; 
+    position: fixed;
+    z-index: 1; 
+    top: 0; 
     left: 0;
-    background-color: #c4c3c3ee; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    background-color: var(--primary-background-color);
+    
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
 }
 
 .mobile-menu ul{
@@ -291,7 +299,7 @@ nav{
     text-align: center;
 }
 .mobile-menu a{
-    color: #000000;
+    color: var(--primary-text-color);
     text-decoration:none;
     font-weight: 500;
 
