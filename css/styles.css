@@ -15,7 +15,7 @@
     --primary-background-color: #1c1b1b; 
     --primary-text-color: #fbfbfb;
     
-    --contrast-color: #ff4500;
+    --contrast-color: #782aed;
 
     --secondary-background-color: var(--primary-text-color);
     --secondary-text-color: var(--primary-background-color);
@@ -75,6 +75,18 @@ nav{
    height: 90%;
 }
 
+article{
+    padding: 30px 0;
+}
+
+article h3{
+    border-bottom: 1px solid #000000;
+}
+
+.about{
+    padding: 0 350px;
+}
+
 .home{
     background:
         linear-gradient(rgba(0, 0, 0, 0.619), rgba(0, 0, 0, 0.5)), 
@@ -104,7 +116,7 @@ nav{
     border-radius: 0px;
   }
 
-  .button:hover{
+.button:hover{
     color: var(--primary-background-color);
   }
 
@@ -162,48 +174,6 @@ nav{
     text-align: center;
 }
 
-
-.about{
-    height: 50vh;
-}
-
-.certification-item{
-    padding: 15px 0;
-}
-
-.certification-item :first-child{
-    font-weight: 800;    
-}
-
-.certification-item :last-child{
-    font-style: italic;
-}
-
-.education-item{
-    padding: 15px 0;
-    text-align: left;
-}
-
-.education-item :first-child{
-    font-weight: 800;    
-}
-
-.education-item :last-child{
-    font-style: italic;
-}
-
-.experience-item{
-    padding: 15px 0;
-}
-
-.experience-item :first-child{
-    font-weight: 800;
-}
-
-.experience-item :last-child{
-    font-style: italic;
-}
-
 .projects li{
     padding: 0px 0px;
 }
@@ -226,8 +196,8 @@ nav{
 }
 
 .project-title-container{
-    color: var(--primary-text-color);
-    background-color: var(--contrast-color);
+    color: var(--contrast-color);
+    /*background-color: var(--contrast-color);*/
     padding: 30px;
     border-radius: 10px 10px 0 0;
 }
@@ -259,6 +229,28 @@ nav{
     align-items: center;
 }
 
+
+.resume-card{
+    padding: 20px 0;
+}
+
+.resume-card-item, .resume-right-info{
+    text-align: left;
+}
+
+.resume-card-item :first-child{
+    font-weight: 800;
+}
+
+.resume-right-info{
+    font-style: italic;
+}
+
+.resume-card-skills{
+    padding: 20px 0;
+}
+
+
 .x-button{
     position: absolute;
     top: 0px;
@@ -288,6 +280,7 @@ nav{
     transition: 0.5s; 
 }
 
+
 .mobile-menu ul{
     display: flex;
     flex-direction: column;
@@ -302,7 +295,11 @@ nav{
     color: var(--primary-text-color);
     text-decoration:none;
     font-weight: 500;
+}
 
+
+.mobile-menu a:hover{
+    color: var(--contrast-color);
 }
 
 .skill-title{
@@ -479,6 +476,51 @@ small{
     }
 
     .end-section-padding{
-        padding: 50px 200px 50px 200px;
+        padding: 2.6vw 20vw 2.6vw 20vw;
+    }
+
+    .resume-card-item{
+        /*padding: 15px 0;*/
+        text-align: left;
+    }
+    
+    .resume-card{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 30px 0;
+    }
+    
+    .resume-right-info{
+        text-align: right;
+        font-weight: 500;
+    }
+    
+    .resume-card-item :first-child{
+        font-weight: 800;    
+    }
+    
+    .skills-container{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .resume-card-item-skills :last-child{
+        font-style: normal;
+        font-weight: 800;
+        text-align: left;
+    }
+    
+    .resume-right-info-skills{
+        text-align: left;
+        font-weight: 400;
+        padding: 0 30px 10px 30px;
+        
+    }
+
+    .resume-card-skills{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        
     }
   }
