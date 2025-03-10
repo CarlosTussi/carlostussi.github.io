@@ -189,7 +189,7 @@ article h3{
 .project-card{
     display: flex;
     flex-direction: column;
-    border: solid var(--primary-text-color) 1px;
+    /*border: solid var(--primary-text-color) 1px;*/
     margin: 50px 0;
     justify-content: space-between;
     border-radius: 10px;
@@ -198,12 +198,13 @@ article h3{
 .project-title-container{
     color: var(--contrast-color);
     /*background-color: var(--contrast-color);*/
-    padding: 30px;
+    padding: 0 30px 0 30px;
     border-radius: 10px 10px 0 0;
 }
 
 .project-title-container h3{
     font-weight: 350;
+    text-align: left;
 }
 
 .project-card p,li{
@@ -211,11 +212,11 @@ article h3{
 }
 
 .project-card p{
-    padding: 30px;
+    padding: 0 30px 0 30px;
 }
 
 .project-card ul{
-    padding: 50px;
+    padding: 20px 50px 0 50px;
     list-style: circle;
 }
 
@@ -379,8 +380,7 @@ small{
     }
 
     .project-card h3{
-        text-align: center;
-        margin: auto;
+        text-align: left;
     }
 
     .home-card{
