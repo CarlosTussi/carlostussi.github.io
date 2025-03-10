@@ -1,3 +1,3 @@
 # carlostussi.github.io
 
-source code for personal website
+Source code for personal website
