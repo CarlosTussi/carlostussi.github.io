@@ -330,7 +330,7 @@ article h3{
     margin: 30px 0 20px 0;
 }
 
-.contact-icons a:hover{
+.contact a:hover{
     color: var(--contrast-color);
 }
 
