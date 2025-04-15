@@ -15,7 +15,7 @@
     --primary-background-color: #1c1b1b; 
     --primary-text-color: #fbfbfb;
     
-    --contrast-color: #782aed;
+    --contrast-color: #d55334;
 
     --secondary-background-color: var(--primary-text-color);
     --secondary-text-color: var(--primary-background-color);
